@@ -3,13 +3,13 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ 🐐 | GoatBot V2 ]";
+const doNotDelete = "[ 🐐 | ༒☞🕊𝐿𝑜𝑟𝑑🕊|𖣘|🕊𝑆𝑖𝑙𝑒𝑛𝑡🕊𝑠𝑡𝑢𝑑𝑒𝑛𝑡🕊☜༒]";
 
 module.exports = {
 	config: {
 		name: "help5",
 		version: "1.17",
-		author: "NTKhang", // orginal author Kshitiz
+		author: "NTKhang", // orginal author Kshitiz || Jayden 
 		countDown: 5,
 		role: 0,
 		shortDescription: {
@@ -34,7 +34,7 @@ module.exports = {
 			const categories = {};
 			let msg = "";
 
-			msg += `╔══════════════╗\n     YAZKY CMD💐\n╚══════════════╝`;
+			msg += `╔══════════════╗\n     Lord Cmds💐\n╚══════════════╝`;
 
 			for (const [name, value] of commands) {
 					if (value.config.role > 1 && role < value.config.role) continue;
@@ -59,13 +59,15 @@ module.exports = {
 			});
 
 			const totalCommands = commands.size;
-			msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
-			msg += `𝗧𝘆𝗽𝗲 ${prefix} 𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n`;
-			msg += `YAZKY AI CHATBOT 💐`;
+			msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱😃🍦\n`;
+			msg += `😃🍦𝗧𝘆𝗽𝗲 ${prefix} 𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱😃🍦\n`;
+			msg += `😃🍦 owners:
+                        Jayden smith 😃🍦
+			link: https://m.me/lordjaydenSmith.1`;
 
 
 			const helpListImages = [
-				"https://i.imgur.com/8d6WbRJ.gif"
+				"https://i.imgur.com/sS7H2mt.jpeg"
 			];
 
 
@@ -94,14 +96,14 @@ module.exports = {
 
 				const response = `╭── NAME ────⭓
 	│ ${configCommand.name}
-	├── INFO
-	│ Description: ${longDescription}
-	│ Other names: ${configCommand.aliases ? configCommand.aliases.join(", ") : "Do not have"}
-	│ Other names in your group: Do not have
-	│ Version: ${configCommand.version || "1.0"}
-	│ Role: ${roleText}
-	│ Time per command: ${configCommand.countDown || 1}s
-	│ Author: ${author}
+	├── INFO😐🍦
+	│ Description:😃🍦 ${longDescription} 😃🍦
+	│ Other names:😃🍦 ${configCommand.aliases ? configCommand.aliases.join(", ") : "Do not have"} 😃🍦
+	│ Other names in your group:😃🍦 Do not have 😃🍦
+	│ Version:😃🍦 ${configCommand.version || "1.0"} 😃🍦
+	│ Role:😃🍦 ${roleText} 😃🍦
+	│ Time per command:😃🍦 ${configCommand.countDown || 1}m 😃🍦
+	│ Author:😃🍦 ${author} 😃🍦
 	├── Usage
 	│ ${usage}
 	├── Notes
