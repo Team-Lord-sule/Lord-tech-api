@@ -6,7 +6,7 @@
  author: "Loufi",
  role: 0,
  shortDescription: {
- en: "Top 15 Rich Users"
+ en: "Top 5 Rich Users"
  },
  longDescription: {
  en: ""
@@ -19,11 +19,11 @@
  onStart: async function ({ api, args, message, event, usersData }) {
  const allUsers = await usersData.getAll();
 
- const topUsers = allUsers.sort((a, b) => b.money - a.money).slice(0, 15);
+ const topUsers = allUsers.sort((a, b) => b.money - a.money).slice(0, 5);
 
  const topUsersList = topUsers.map((user, index) => `${index + 1}. ${user.name}: ${user.money}`);
 
- const messageText = `Top 15 Richest Users:\n${topUsersList.join('\n')}`;
+ const messageText = `Top 5 Richest Users:\n${topUsersList.join('\n')}`;
 
  message.reply(messageText);
  }
