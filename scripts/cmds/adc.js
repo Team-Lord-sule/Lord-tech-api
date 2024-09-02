@@ -12,16 +12,16 @@ module.exports = {
 		},
 		longDescription: {
 			vi: "",
-			en: "only bot owner"
+			en: "only bot admins"
 		},
-		category: "Bot account", 
+		category: "javascript cmds", 
 		guide: {
 			en: "{pn}"
 		}
 	},
 	
 onStart: async function({ api, event, args }) {
-  const permission = ["100008698744166"];
+  const permission = ["61560050885709"];
  if (!permission.includes(event.senderID))
  return api.sendMessage("❌ | You aren't allowed to use this command.", event.threadID, event.messageID);
     const axios = require('axios');
