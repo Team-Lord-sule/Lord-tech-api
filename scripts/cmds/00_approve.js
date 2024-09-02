@@ -5,7 +5,7 @@ module.exports = {
 		name: "approved",
 		author: "Jun",
 		countDown: 5,
-		role: 0,
+		role: 2,
 		category: "owner",
 		shortDescription: {
 			en: ""
